@@ -18,8 +18,8 @@
 #include "pinocchio/algorithm/frames.hpp"
 #include "pinocchio/algorithm/joint-configuration.hpp"
 using namespace pinocchio;
-#define URDFNAME  "/home/linzhu/legged_ws_ros/src/Hector_Simulation/Hector_ROS_Simulation/hector_description/urdf/hector.urdf"
- 
+// #define URDFNAME  "/home/linzhu/code_should_rewrite/hector_sim/hector.urdf"
+  
 using Eigen::Array4f;
 using Eigen::Array4i;
 using Eigen::Array4d;

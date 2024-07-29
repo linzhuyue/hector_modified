@@ -2,6 +2,7 @@
 ## 1. modify to verify jumping motion planning and controller
 ## 2. using pinocchio replace all the kinenatic and dynamic parts
 ## 3. add the a general joystick controller without ros
+## 4. you should git clone pinocchio and hpp-fcl to your ros worksapce and using catkin build
 
 ## remark: if you wanna use joystick, you should firts press [RT+A] then [start], then you can control the robot
 

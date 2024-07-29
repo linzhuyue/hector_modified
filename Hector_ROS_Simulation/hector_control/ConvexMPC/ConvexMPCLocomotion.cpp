@@ -23,7 +23,11 @@ ConvexMPCLocomotion::ConvexMPCLocomotion(double _dt, int _iterations_between_mpc
     firstSwing[i] = true;
 
   foot_position.open("foot_pos.txt");
-
+  // added by lz
+  std::string filePath = __FILE__;
+  std::string directoryPath = filePath.substr(0, filePath.find_last_of("/\\"));
+  // std::cout<<"filePath:"<<directoryPath<<std::endl;
+  std::string URDFNAME = directoryPath +"/hector.urdf";
   pinocchio::urdf::buildModel(URDFNAME, model);
   const std::string frame_nameR = "R_foot_link_1"; 
   frame_idR_foot = model.getFrameId(frame_nameR);

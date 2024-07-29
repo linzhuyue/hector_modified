@@ -42,7 +42,7 @@ SOFTWARE.
 #include "pinocchio/algorithm/frames.hpp"
 #include "pinocchio/algorithm/joint-configuration.hpp"
 using namespace pinocchio;
-#define URDFNAME  "/home/linzhu/legged_ws_ros/src/Hector_Simulation/Hector_ROS_Simulation/hector_description/urdf/hector.urdf"
+#define URDFNAME  "/home/linzhu/code_should_rewrite/hector_sim/src/hector_modified/Hector_ROS_Simulation/hector_description/urdf/hector.urdf"
   
 /*!
  * Data sent from control algorithm to legs

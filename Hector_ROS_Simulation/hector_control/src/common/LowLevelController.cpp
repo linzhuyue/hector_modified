@@ -170,6 +170,10 @@ void LowLevelController::computeLegJacobianAndPositionPIno(Biped& _biped, Vec5<d
 
         foottrans = placement.translation();
         foottrans(2)+=0.03;
+        foottrans.setZero();
+        foottrans(0) = placement.translation().matrix()(0,0);
+        foottrans(1) = placement.translation().matrix()(1,0);
+        foottrans(2) = placement.translation().matrix()(2,0);
         JJ = J.block(0,0,6,5);
     }else{ //right
         for (int i = 8; i < 13; i++)
@@ -197,6 +201,10 @@ void LowLevelController::computeLegJacobianAndPositionPIno(Biped& _biped, Vec5<d
         foottrans(2)+=0.03;
         foottrans = placement.translation();
         foottrans(2)+=0.03;
+        foottrans.setZero();
+        foottrans(0) = placement.translation().matrix()(0,0);
+        foottrans(1) = placement.translation().matrix()(1,0);
+        foottrans(2) = placement.translation().matrix()(2,0);
         JJ = J.block(0,8,6,5);
     }
     // std::cout << "Out qq: " << qq.transpose()<< std::endl;
